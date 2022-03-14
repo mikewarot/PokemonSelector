@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 564
+  Left = 3532
   Height = 595
-  Top = 195
+  Top = 221
   Width = 1274
   Caption = 'Pokemon Selector'
   ClientHeight = 595
@@ -14,36 +14,160 @@ object Form1: TForm1
     Top = 32
     Width = 466
     Max = 100
-    Min = 1
-    OnChange = TrackBar1Change
-    Position = 1
-    TabOrder = 0
+    OnChange = UpdateMemo1
+    Position = 0
+    TabOrder = 1
   end
   object Edit1: TEdit
     Left = 24
     Height = 33
     Top = 32
     Width = 195
-    TabOrder = 1
-    Text = 'Edit1'
+    OnChange = UpdateMemo1
+    TabOrder = 0
+    Text = 'Name 1'
   end
   object Memo1: TMemo
-    Left = 749
+    Left = 752
     Height = 433
-    Top = 36
+    Top = 32
     Width = 462
     Lines.Strings = (
       'Memo1'
     )
-    TabOrder = 2
+    TabOrder = 16
   end
-  object Button1: TButton
-    Left = 197
-    Height = 46
-    Top = 494
-    Width = 358
-    Caption = 'Button1'
-    OnClick = Button1Click
+  object TrackBar2: TTrackBar
+    Left = 248
+    Height = 38
+    Top = 80
+    Width = 466
+    Max = 100
+    OnChange = UpdateMemo1
+    Position = 0
     TabOrder = 3
+  end
+  object Edit2: TEdit
+    Left = 24
+    Height = 33
+    Top = 80
+    Width = 195
+    OnChange = UpdateMemo1
+    TabOrder = 2
+    Text = 'Name 2'
+  end
+  object TrackBar3: TTrackBar
+    Left = 248
+    Height = 38
+    Top = 136
+    Width = 466
+    Max = 100
+    OnChange = UpdateMemo1
+    Position = 0
+    TabOrder = 5
+  end
+  object Edit3: TEdit
+    Left = 24
+    Height = 33
+    Top = 136
+    Width = 195
+    OnChange = UpdateMemo1
+    TabOrder = 4
+    Text = 'Name 3'
+  end
+  object TrackBar4: TTrackBar
+    Left = 248
+    Height = 38
+    Top = 192
+    Width = 466
+    Max = 100
+    OnChange = UpdateMemo1
+    Position = 0
+    TabOrder = 7
+  end
+  object Edit4: TEdit
+    Left = 24
+    Height = 33
+    Top = 192
+    Width = 195
+    OnChange = UpdateMemo1
+    TabOrder = 6
+    Text = 'Name 4'
+  end
+  object TrackBar5: TTrackBar
+    Left = 248
+    Height = 38
+    Top = 248
+    Width = 466
+    Max = 100
+    OnChange = UpdateMemo1
+    Position = 0
+    TabOrder = 9
+  end
+  object Edit5: TEdit
+    Left = 24
+    Height = 33
+    Top = 248
+    Width = 195
+    OnChange = UpdateMemo1
+    TabOrder = 8
+    Text = 'Name 5'
+  end
+  object TrackBar6: TTrackBar
+    Left = 248
+    Height = 38
+    Top = 312
+    Width = 466
+    Max = 100
+    OnChange = UpdateMemo1
+    Position = 0
+    TabOrder = 11
+  end
+  object Edit6: TEdit
+    Left = 24
+    Height = 33
+    Top = 312
+    Width = 195
+    OnChange = UpdateMemo1
+    TabOrder = 10
+    Text = 'Name 6'
+  end
+  object TrackBar7: TTrackBar
+    Left = 248
+    Height = 38
+    Top = 376
+    Width = 466
+    Max = 100
+    OnChange = UpdateMemo1
+    Position = 0
+    TabOrder = 13
+  end
+  object Edit7: TEdit
+    Left = 24
+    Height = 33
+    Top = 376
+    Width = 195
+    OnChange = UpdateMemo1
+    TabOrder = 12
+    Text = 'Name 7'
+  end
+  object TrackBar8: TTrackBar
+    Left = 248
+    Height = 38
+    Top = 431
+    Width = 466
+    Max = 100
+    OnChange = UpdateMemo1
+    Position = 0
+    TabOrder = 15
+  end
+  object Edit8: TEdit
+    Left = 24
+    Height = 33
+    Top = 431
+    Width = 195
+    OnChange = UpdateMemo1
+    TabOrder = 14
+    Text = 'Name 8'
   end
 end

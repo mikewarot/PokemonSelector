@@ -15,7 +15,7 @@ object Form1: TForm1
     Width = 466
     Max = 100
     OnChange = UpdateMemo1
-    Position = 0
+    Position = 30
     TabOrder = 1
   end
   object Edit1: TEdit
@@ -25,7 +25,7 @@ object Form1: TForm1
     Width = 195
     OnChange = UpdateMemo1
     TabOrder = 0
-    Text = 'Name 1'
+    Text = 'Weedle'
   end
   object Memo1: TMemo
     Left = 752
@@ -33,7 +33,14 @@ object Form1: TForm1
     Top = 32
     Width = 462
     Lines.Strings = (
-      'Memo1'
+      'Weedle 1-30 30'
+      'Nickit 31-60 30'
+      'Woobat 61-71 11'
+      'Exeggcute 72-82 11'
+      'Jigglypuff 83-93 11'
+      'Pincir 94-99 6'
+      'Pachirisu 100-100 1'
+      'Name 8 101-100 0'
     )
     TabOrder = 16
   end
@@ -44,7 +51,7 @@ object Form1: TForm1
     Width = 466
     Max = 100
     OnChange = UpdateMemo1
-    Position = 0
+    Position = 30
     TabOrder = 3
   end
   object Edit2: TEdit
@@ -54,7 +61,7 @@ object Form1: TForm1
     Width = 195
     OnChange = UpdateMemo1
     TabOrder = 2
-    Text = 'Name 2'
+    Text = 'Nickit'
   end
   object TrackBar3: TTrackBar
     Left = 248
@@ -63,7 +70,7 @@ object Form1: TForm1
     Width = 466
     Max = 100
     OnChange = UpdateMemo1
-    Position = 0
+    Position = 11
     TabOrder = 5
   end
   object Edit3: TEdit
@@ -73,7 +80,7 @@ object Form1: TForm1
     Width = 195
     OnChange = UpdateMemo1
     TabOrder = 4
-    Text = 'Name 3'
+    Text = 'Woobat'
   end
   object TrackBar4: TTrackBar
     Left = 248
@@ -82,7 +89,7 @@ object Form1: TForm1
     Width = 466
     Max = 100
     OnChange = UpdateMemo1
-    Position = 0
+    Position = 11
     TabOrder = 7
   end
   object Edit4: TEdit
@@ -92,7 +99,7 @@ object Form1: TForm1
     Width = 195
     OnChange = UpdateMemo1
     TabOrder = 6
-    Text = 'Name 4'
+    Text = 'Exeggcute'
   end
   object TrackBar5: TTrackBar
     Left = 248
@@ -101,7 +108,7 @@ object Form1: TForm1
     Width = 466
     Max = 100
     OnChange = UpdateMemo1
-    Position = 0
+    Position = 11
     TabOrder = 9
   end
   object Edit5: TEdit
@@ -111,7 +118,7 @@ object Form1: TForm1
     Width = 195
     OnChange = UpdateMemo1
     TabOrder = 8
-    Text = 'Name 5'
+    Text = 'Jigglypuff'
   end
   object TrackBar6: TTrackBar
     Left = 248
@@ -120,7 +127,7 @@ object Form1: TForm1
     Width = 466
     Max = 100
     OnChange = UpdateMemo1
-    Position = 0
+    Position = 6
     TabOrder = 11
   end
   object Edit6: TEdit
@@ -130,7 +137,7 @@ object Form1: TForm1
     Width = 195
     OnChange = UpdateMemo1
     TabOrder = 10
-    Text = 'Name 6'
+    Text = 'Pincir'
   end
   object TrackBar7: TTrackBar
     Left = 248
@@ -139,7 +146,7 @@ object Form1: TForm1
     Width = 466
     Max = 100
     OnChange = UpdateMemo1
-    Position = 0
+    Position = 1
     TabOrder = 13
   end
   object Edit7: TEdit
@@ -149,7 +156,7 @@ object Form1: TForm1
     Width = 195
     OnChange = UpdateMemo1
     TabOrder = 12
-    Text = 'Name 7'
+    Text = 'Pachirisu'
   end
   object TrackBar8: TTrackBar
     Left = 248

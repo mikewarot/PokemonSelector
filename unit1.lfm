@@ -1,0 +1,49 @@
+object Form1: TForm1
+  Left = 564
+  Height = 595
+  Top = 195
+  Width = 1274
+  Caption = 'Pokemon Selector'
+  ClientHeight = 595
+  ClientWidth = 1274
+  DesignTimePPI = 144
+  LCLVersion = '2.0.12.0'
+  object TrackBar1: TTrackBar
+    Left = 248
+    Height = 38
+    Top = 32
+    Width = 466
+    Max = 100
+    Min = 1
+    OnChange = TrackBar1Change
+    Position = 1
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 24
+    Height = 33
+    Top = 32
+    Width = 195
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+  object Memo1: TMemo
+    Left = 749
+    Height = 433
+    Top = 36
+    Width = 462
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 197
+    Height = 46
+    Top = 494
+    Width = 358
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+end

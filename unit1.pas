@@ -30,6 +30,7 @@ type
     TrackBar7: TTrackBar;
     TrackBar8: TTrackBar;
     procedure Button1Click(Sender: TObject);
+    procedure Memo1Change(Sender: TObject);
     procedure TrackBar1Change(Sender: TObject);
     procedure UpdateMemo1(Sender: TObject);
   private
@@ -55,28 +56,39 @@ end;
 procedure TForm1.UpdateMemo1(Sender: TObject);
 var
   total,start : integer;
+
+  procedure AddLine(Name : string; Amount : integer);
+  begin
+    If (Name <> '') AND (Amount > 0) then
+    start := total + 1; total := total + Amount;
+    If Amount > 1 then
+      Memo1.Append(Name + #9+'''' + start.ToString + '-' + total.tostring + #9+'''' + Amount.ToString)
+    else
+      If Amount = 1 then
+        Memo1.Append(Name + #9+'''' + start.ToString + #9+'''' + Amount.ToString)
+      else
+        Memo1.Append(Name);
+  end;
+
 begin
   Memo1.Clear;
   total := 0;
-  start := total + 1; total := total + trackbar1.Position;
-  Memo1.Append(Edit1.Text + ' ' + start.ToString + '-' + total.tostring + ' '+ Trackbar1.Position.ToString);
-  start := total + 1; total := total + trackbar2.Position;
-  Memo1.Append(Edit2.Text + ' ' + start.ToString + '-' + total.tostring + ' '+ Trackbar2.Position.ToString);
-  start := total + 1; total := total + trackbar3.Position;
-  Memo1.Append(Edit3.Text + ' ' + start.ToString + '-' + total.tostring + ' '+ Trackbar3.Position.ToString);
-  start := total + 1; total := total + trackbar4.Position;
-  Memo1.Append(Edit4.Text + ' ' + start.ToString + '-' + total.tostring + ' '+ Trackbar4.Position.ToString);
-  start := total + 1; total := total + trackbar5.Position;
-  Memo1.Append(Edit5.Text + ' ' + start.ToString + '-' + total.tostring + ' '+ Trackbar5.Position.ToString);
-  start := total + 1; total := total + trackbar6.Position;
-  Memo1.Append(Edit6.Text + ' ' + start.ToString + '-' + total.tostring + ' '+ Trackbar6.Position.ToString);
-  start := total + 1; total := total + trackbar7.Position;
-  Memo1.Append(Edit7.Text + ' ' + start.ToString + '-' + total.tostring + ' '+ Trackbar7.Position.ToString);
-  start := total + 1; total := total + trackbar8.Position;
-  Memo1.Append(Edit8.Text + ' ' + start.ToString + '-' + total.tostring + ' '+ Trackbar8.Position.ToString);
+  AddLine(Edit1.Text,TrackBar1.Position);
+  AddLine(Edit2.Text,TrackBar2.Position);
+  AddLine(Edit3.Text,TrackBar3.Position);
+  AddLine(Edit4.Text,TrackBar4.Position);
+  AddLine(Edit5.Text,TrackBar5.Position);
+  AddLine(Edit6.Text,TrackBar6.Position);
+  AddLine(Edit7.Text,TrackBar7.Position);
+  AddLine(Edit8.Text,TrackBar8.Position);
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Memo1Change(Sender: TObject);
 begin
 
 end;

@@ -33,15 +33,15 @@ object Form1: TForm1
     Top = 32
     Width = 462
     Lines.Strings = (
-      'Weedle 1-30 30'
-      'Nickit 31-60 30'
-      'Woobat 61-71 11'
-      'Exeggcute 72-82 11'
-      'Jigglypuff 83-93 11'
-      'Pincir 94-99 6'
-      'Pachirisu 100-100 1'
-      'Name 8 101-100 0'
+      'Weedle'#9'''1-30'#9'''30'
+      'Nickit'#9'''31-60'#9'''30'
+      'Woobat'#9'''61-71'#9'''11'
+      'Exeggcute'#9'''72-82'#9'''11'
+      'Jigglypuff'#9'''83-93'#9'''11'
+      'Pincir'#9'''94-99'#9'''6'
+      'Pachirisu'#9'''100'#9'''1'
     )
+    OnChange = Memo1Change
     TabOrder = 16
   end
   object TrackBar2: TTrackBar
@@ -175,6 +175,5 @@ object Form1: TForm1
     Width = 195
     OnChange = UpdateMemo1
     TabOrder = 14
-    Text = 'Name 8'
   end
 end

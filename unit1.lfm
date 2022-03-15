@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 3532
+  Left = 319
   Height = 595
-  Top = 221
+  Top = 67
   Width = 1274
   Caption = 'Pokemon Selector'
   ClientHeight = 595
@@ -33,13 +33,13 @@ object Form1: TForm1
     Top = 32
     Width = 462
     Lines.Strings = (
-      'Weedle'#9'''1-30'#9'''30'
-      'Nickit'#9'''31-60'#9'''30'
-      'Woobat'#9'''61-71'#9'''11'
-      'Exeggcute'#9'''72-82'#9'''11'
-      'Jigglypuff'#9'''83-93'#9'''11'
-      'Pincir'#9'''94-99'#9'''6'
-      'Pachirisu'#9'''100'#9'''1'
+      'Weedle'#9'30'#9'1-30'
+      'Nickit'#9'30'#9'31-60'
+      'Woobat'#9'11'#9'61-71'
+      'Exeggcute'#9'11'#9'72-82'
+      'Jigglypuff'#9'11'#9'83-93'
+      'Pincir'#9'6'#9'94-99'
+      'Pachirisu'#9'1'#9'100'
     )
     OnChange = Memo1Change
     TabOrder = 16

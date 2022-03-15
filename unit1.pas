@@ -62,10 +62,10 @@ var
     If (Name <> '') AND (Amount > 0) then
     start := total + 1; total := total + Amount;
     If Amount > 1 then
-      Memo1.Append(Name + #9+'''' + start.ToString + '-' + total.tostring + #9+'''' + Amount.ToString)
+      Memo1.Append(Name + #9+'''' + Amount.ToString + #9+'''' + start.ToString + '-' + total.tostring)
     else
       If Amount = 1 then
-        Memo1.Append(Name + #9+'''' + start.ToString + #9+'''' + Amount.ToString)
+        Memo1.Append(Name + #9+'''' + Amount.ToString+ #9+'''' + start.ToString )
       else
         Memo1.Append(Name);
   end;
